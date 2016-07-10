@@ -1,0 +1,101 @@
+<extend name="Temp/base"/>
+<block name="content">
+        <!--页面主体部分-->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- 头部信息 -->
+                <div class="row">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#list_article" data-toggle="tab">文章列表</a>
+                        </li>
+                        <li>
+                            <a href="#add_Article" data-toggle="tab">添加文章</a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="list_article">
+                            <br/>
+                            <!--文章列表 页面-->
+                            <ul class="list-group">
+                                <li class="list-group-item active">
+                                    <p class="article">列表</p>
+                                    <p class="time">时间</p>
+                                    <p class="action">操作</p>
+                                </li>
+
+                                <php>
+                                    if(empty($list)){
+                                        echo '
+                                            <li class="list-group-item" style="text-align: center">抱歉，本版块暂无文章！<br/>
+                                                您可以单击 添加文章，来发布最新文章
+                                            </li>
+                                            ';
+                                    }else{
+                                        for($i = 0; $i < count($list); $i++){
+                                            echo '
+                                                <li class="list-group-item heighr">
+                                                    <div class="item-left">
+                                                        <!-- 文章标题-->
+                                                        <p class="articletitle">'.$list[$i]['article_articletitle'].'</p>
+                                                    </div>
+                                                    <div class="item-center">
+                                                        <!--文章发布时间-->
+                                                        <span class="articletime text-center visible-lg text-danger">'.$list[$i]['article_articletime'].'</span>
+                                                    </div>
+                                                    <div class="item-right ">
+                                                        <!--删除修改按钮-->
+                                                        <span class="pull-right action_edit btn btn-default"><a href="__CONTROLLER__/edit?Id='.$list[$i]['article_articleid'].'" >修改</a></span>
+                                                        <a id="delete_wz" onclick="delete_wz()" class="pull-right action_dell btn btn-danger" href="__CONTROLLER__/edit?do=del&Id='.$list[$i]['article_articleid'].'">删除</a>
+                                                    </div>
+                                                </li>
+                                            ';
+                                        }
+                                    }
+                                </php>
+
+                                <script>
+                                    function delete_wz(){
+                                        if(confirm("你确定修改吗？")){
+
+                                        }else{
+                                            //history.go(-1);
+                                            //location.reload();
+                                            window.close();
+                                        }
+                                    }
+                                </script>
+                                <!--分页-->
+                                <ul class="pagination pull-right">
+                                       <a class="next_page"><php>echo $page;</php></a>
+                                </ul>
+                            </ul>
+                        </div>
+
+                        <!--添加文章 页面-->
+                        <div class="tab-pane fade" id="add_Article">
+                            <form class="form-horizontal form_action" action="" method="post">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">文章标题：</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="请输入文章标题" name="title"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">文章内容：</label>
+                                    <div class="col-sm-8">
+                                        <include file="Temp/editor"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" name="content" class="btn btn-danger col-sm-offset-9">发布文章</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="Temp/loadeditor"/>
+</block>

@@ -1,0 +1,134 @@
+﻿<extend name="Temp/base"/>
+<block name="content">
+
+    <!-- WEB前端学习界面 -->
+    <div class="php_background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">CSS3特效</div>
+                        <div class="panel-body">
+                            <div class="row row group-grids">
+                                <php>
+                                    for($n = 0; $n < count($data[0]); $n++){
+                                        $str = $data[0][$n]['article_articletitle'];
+                                        echo '
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 grid">
+                                                <p>
+                                                    <a href="'.$data[0][$n]['article_articleimg'].'" target="_blank" title="'.$data[0][$n]['article_articletitle'].'"><img src="'.$root.$data[0][$n]['article_articlecontent'].'" class="group-avatar-sm"></a>
+                                                </p>
+                                                <p class="title">
+                                                    <a title="'.$data[0][$n]['article_articletitle'].'" class="link-light" target="_blank" href="'.$data[0][$n]['article_articleimg'].'">'.mb_substr($str, 0, 10, 'utf-8').'</a>
+                                                </p>
+                                            </div>
+                                        ';
+                                    }
+                                </php>
+                            </div>
+                        </div>
+                    </div>
+                        <php>
+                            for($n = 0; $n < count($data[1]); $n++){
+                                $str = strip_tags($data[1][$n]['article_articlecontent']);
+                                $str_title = $data[1][$n]['article_articletitle'];
+                                echo '
+                                    <div class="row web_left">
+                                        <div class="col-md-12 wenzhang">
+                                            <h3><a title="'.$data[1][$n]['article_articletitle'].'" href="__CONTROLLER__/details?nid='.$data[1][$n]['article_articleid'].'" target="_blank" >
+                                                '.mb_substr($str_title, 0, 70, 'utf-8').'</a></h3>
+
+                                            <p class="text-index">'.mb_substr($str, 0, 120, 'utf-8').'</p>
+                                            <P>
+                                                <span class="label label-success biaoqian">'.$data[1][$n]['article_articletime'].'</span>
+                                                <span class="label label-success biaoqian">作者: 操作猿</span>
+                                            </P>
+                                        </div>
+                                    </div>
+                                ';
+                            }
+                        </php>
+                        <!--<ul class="pagination">-->
+                        <!--<li><a href="#">上一页</a></li>-->
+                        <!--<li><a href="#">1</a></li>-->
+                        <!--<li><a href="#">2</a></li>-->
+                        <!--<li><a href="#">3</a></li>-->
+                        <!--<li><a href="#">4</a></li>-->
+                        <!--<li><a href="#">5</a></li>-->
+                        <!--<li><a href="#">下一页</a></li>-->
+                        <!--</ul><br>-->
+                </div>
+                <div class="col-md-4">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">WEB框架</div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="right_book">
+                                <li><a href="http://m.sui.taobao.org/" target="_blank">SUI Mobile</a></li>
+                                <li><a href="http://framework7.taobao.org/" target="_blank" style="margin-right: 10px">Framework7</a>
+                                    <span class="label label-danger">推荐</span>
+                                </li>
+                                <li><a href="http://jqueryui.com/" target="_blank">jQuery UI</a></li>
+                                <li><a href="http://jquerymobile.com/" target="_blank">jQuery Mobile</a></li>
+                                <li><a href="http://amazeui.org/" target="_blank">Amaze UI</a></li>
+                                <li><a href="http://www.pintuer.com/" target="_blank">拼图</a></li>
+                                <li><a href="http://foundation.zurb.com/" target="_blank">Foundation</a></li>
+                                <li><a href="https://github.com/dcloudio/mui" target="_blank">mui</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">帮助手册</div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="right_book">
+                                <li><a href="http://www.php100.com/manual/css3_0/" target="_blank">CSS3样式生成器</a></li>
+                                <li>
+                                    <a href="http://www.php100.com/manual/apache2/" target="_blank">Apache2中文手册</a>
+                                    <span class="label label-danger">推荐</span>
+                                </li>
+                                <li><a href="http://www.php100.com/manual/html5/" target="_blank">HTML5 标签手册</a></li>
+                                <li><a href="http://www.php100.com/manual/css3_0/" target="_blank">CSS3属性手册</a></li>
+                                <li><a href="http://www.php100.com/manual/javascript.html" target="_blank">JS手册</a></li>
+                                <li><a href="http://www.php100.com/manual/jquery/" target="_blank">jQuery手册</a></li>
+                                <li><a href="http://www.php100.com/manual/Python/" target="_blank">Python 教程</a></li>
+                                <li><a href="http://www.php100.com/manual/smarty/" target="_blank">Smarty 3 中文手册</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="panel-title">WEB 书籍</div>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="right_book">
+                                <li>
+                                    <a href="http://pan.baidu.com/s/1dDxur0P" target="_blank" style="margin-right: 10px">程序员在囧途</a>
+                                    <span class="label label-danger">推荐</span>
+                                </li>
+                                <li><a href="http://cywl.jb51.net:81/201303/books/jtcss_gjwebbzjjfa_2_jb51.net.rar" target="_blank">精通CSS 高级WEB标准解决方案</a></li>
+                                <li><a href="http://vdisk.weibo.com/s/Ay9xx-k0JL-o" target="_blank">CSS禅意花园</a></li>
+                                <li><a href="http://down.xiazai2.net/?/102318/jb51/JavaScript高级程序设计(第3版) 中文pdf扫描版 89M.exe" target="_blank">JavaScript 高级程序设计</a></li>
+                                <li><a href="http://pan.baidu.com/s/1gdGMkSj" target="_blank">JavaScript+DOM 编程艺术</a></li>
+                                <li><a href="http://dd.jb51.net:81/201106/books/jsqwzn_6ban_jb51net.rar" target="_blank">JavaScript权威指南</a></li>
+                                <li><a href="http://wt4.jb51.net:81/200908/books/[jb51.net]fengli_jquery.rar" target="_blank">锋利的jQuery</a></li>
+                                <li><a href="http://pan.baidu.com/s/1kTrIsnX" target="_blank">H5 Canvas 游戏开发实战</a></li>
+                                <li><a href="http://dd5.pc6.com/soft/《鸟哥的Linux私房菜》.rar" target="_blank">鸟哥的Linux私房菜</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</block>

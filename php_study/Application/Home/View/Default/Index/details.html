@@ -1,0 +1,39 @@
+<extend name="Temp/base"/>
+<block name="content">
+    <div class="container">
+        <div class="row">
+            <!--文章详情列表-->
+            <php>
+                echo '
+                    <div class="col-md-9 col-xs-12 xq_background">
+                        <div class="details_title">
+                            <h3 class="text-center">'.$data[0][0]['article_articletitle'].'</h3>
+                            <p class="text-center">
+                                作者：操作猿  发布时间：'.$data[0][0]['article_articletime'].'
+                            </p>
+                        </div>
+                        <div class="details_content">
+                            <p>'.$data[0][0]['article_articlecontent'].'</p>
+                        </div>
+                    </div>
+                ';
+            </php>
+            <!--右侧推荐新闻-->
+            <div class="col-md-3 col-xs-12 pinn">
+                <ul class="list-group">
+                    <li class="list-group-item active">推荐文章</li>
+                    <script>
+                        $(".pinn").pin();
+                    </script>
+                    <php>
+                        for($n = 0; $n < count($hot); $n++){
+                            echo '
+                                <li class="list-group-item"><a target="_blank" href="__CONTROLLER__/details?nid='.$hot[$n]['article_articleid'].'">'.$hot[$n]['article_articletitle'].'</a></li>
+                            ';
+                        }
+                    </php>
+                </ul>
+            </div>
+        </div>
+    </div>
+</block>

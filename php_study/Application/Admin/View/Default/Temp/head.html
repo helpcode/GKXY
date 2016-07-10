@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{$title}</title>
+    <link href="__ROOT__/Application/Public/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__ROOT__/Application/Public/Style/admin.css" rel="stylesheet">
+    <link href="__ROOT__/Application/Public/Bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div id="wrapper">
+    <!-- 导航条 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="__CONTROLLER__/index.html" style="padding:15px 0px 0px 30px">怪客学院-管理员后台</a>
+        </div>
+        <!-- Top Menu Items -->
+        <include file="Temp/nav" />
+        <!-- 左侧导航条部分 -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li class="active">
+                    <a href="__CONTROLLER__/index.html" style="background-color:#27504C;"><i class="glyphicon glyphicon-home"></i> 管理首页</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#gk_index">
+                        <i class="glyphicon glyphicon-menu-hamburger"></i> 学院主页<i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="gk_index" class="collapse">
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=1_1">推荐学习</a>
+                        </li>
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=1_2">PHP学习</a>
+                        </li>
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=1_3">程序猿生活</a>
+                        </li>
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=1_4">WEB前端推荐</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#gk_frontend">
+                        <i class="glyphicon glyphicon-bitcoin"></i> WEB前端<i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="gk_frontend" class="collapse">
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=2_1">CSS3特效</a>
+                        </li>
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=2_2">WEB框架</a>
+                        </li>
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=2_3">帮助手册</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#gk_news">
+                        <i class="glyphicon glyphicon-console"></i> 开发者资讯<i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="gk_news" class="collapse">
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=3_1">推荐资讯</a>
+                        </li>
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=3_2">业界热点</a>
+                        </li>
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=3_3">编程开发</a>
+                        </li>
+                        <li>
+                            <a href="__CONTROLLER__/table?do=create&id=3_4">程序员人生</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#gk_admin">
+                        <i class="glyphicon glyphicon-wrench"></i> 其他管理<i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="gk_admin" class="collapse">
+                        <li>
+                            <a target="_blank" href="__ROOT__/Application/UPLOAD/?/admin/nav_menu/">导航管理</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="__ROOT__/Application/UPLOAD/?/admin/user/list/">账户管理</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>

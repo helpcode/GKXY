@@ -1,0 +1,41 @@
+<extend name="Temp/base"/>
+<block name="content">
+
+    <div class="container back">
+        <div class="tab-pane fade active in" id="add_add_Article">
+            <php>
+                echo '
+                        <form class="form-horizontal form_action" action="__ACTION__?do=mod&Id='.$data[0][article_articleid].'" method="post">
+                            <div class="form-group text-center">
+                                <h3 class="">修改文章 <small>请操作</small></h3>
+                            </div>
+                            <div class="form-group">
+                                <span class="edit_title col-sm-2 control-label">文章标题：</span>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="inputEmail3" value="'.$data[0][article_articletitle].'" placeholder="请输入文章标题" name="title"/>
+                                </div>
+                            </div>
+                              <div class="form-group">
+                                    <span class="edit_title col-sm-2 control-label">文章内容：</span>
+                                  <div class="col-sm-8">
+                            <!-- 加载编辑器的容器 -->
+                            <script id="container" name="content" type="text/plain">
+                                '.$data[0]['article_articlecontent'].'
+                            </script>
+                            ';
+                    </php>
+                        <include file="Temp/loadeditor" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="content" class="btn btn-danger col-sm-offset-9">发布文章</button>
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+
+</block>
+

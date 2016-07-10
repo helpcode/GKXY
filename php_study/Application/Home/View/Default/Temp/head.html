@@ -1,0 +1,118 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="极客,php,android,html,css3,html5,javascript,js,学院,WeCenter,Bootstrap" />
+    <meta name="description" content="为你提供最新最好的PHP学习资源，帮助你掌握更多的编程技术提升你的思想见解，在这里你想要的都会有" />
+    <link rel="shortcut icon" href="__ROOT__/Application/Public/Bootstrap/img/favicon.ico" type="image/x-icon" />
+    <title>{$title}</title>
+
+    <!--响应式样式应用-->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Application/Public/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__ROOT__/Application/Public/Bootstrap/css/buttons.css">
+    <script type="text/javascript" src="__ROOT__/Application/Public/Bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__ROOT__/Application/Public/Bootstrap/js/bootstrap.min.js"></script>
+    <!--网站主要页面样式引用-->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Application/Public/Bootstrap/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Application/Public/Bootstrap/css/developer.css"/>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Application/Public/Bootstrap/css/web_learn.css"/>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Application/Public/Bootstrap/css/php_learn.css"/>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Application/Public/Bootstrap/css/details.css"/>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Application/Public/Bootstrap/js/jquery.pin.js"/>
+    <!--右下角回到顶部导航-->
+    <link href="__ROOT__/Application/Public/Bootstrap/css/style.css" rel="stylesheet" type="text/css" />
+    <!--jquery-ui 支持元素拖动-->
+    <script type="text/javascript" src="__ROOT__/Application/Public/Bootstrap/js/jquery-ui.min.js"></script>
+
+    <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body >
+
+<!--nav导航条-->
+<nav class="navbar navbar-default navbar-fixed-top test" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                <span class="sr-only">nav导航条</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand test" href="index.html"><img src="__ROOT__/Application/Public/Bootstrap/img/php-logo3.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-left navbar" style="margin-left: 10px;">
+                <li class="active">
+                    <a href="__CONTROLLER__/index.html" class="test">网站首页</a>
+                </li>
+                <li>
+                    <a id="php_learn" href="__CONTROLLER__/php_learn.html" >PHP学习</a>
+                </li>
+                <li>
+                    <a id="web_learn" href="__CONTROLLER__/web_learn.html">WEB前端</a>
+                </li>
+                <li >
+                    <a id="developer" href="__CONTROLLER__/developer.html">开发者资讯</a>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-sm">
+                    <li>
+                        <a href="__ROOT__/Application/UPLOAD" target="_blank">社区 &nbsp;<span class="label label-default hot">火</span></a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--banner 切换-->
+<div id="fullcarousel-example" data-interval="false" class="carousel slide" data-ride="carousel">
+    <!--图片圆点-->
+    <ol class="carousel-indicators">
+        <li data-target="#fullcarousel-example" data-slide-to="0" class="active"></li>
+        <li data-target="#fullcarousel-example" data-slide-to="1"></li>
+        <li data-target="#fullcarousel-example" data-slide-to="2"></li>
+    </ol>
+    <!--轮播图片-->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="__CONTROLLER__/details?nid=186" target="_blank">
+                <img src="__ROOT__/Application/Public/Bootstrap/img/bn2.jpg">
+            </a>
+            <div class="carousel-caption">
+                <h2>IT应聘者的简历应该是怎么样的？</h2>
+                <p>从去年到现在看了几百份简历，包括产品运营和产品设计师的职位。我不是 HR...</p>
+            </div>
+        </div>
+        <div class="item">
+            <a href="__CONTROLLER__/details?nid=182" target="_blank">
+                <img src="__ROOT__/Application/Public/Bootstrap/img/bn3.jpg">
+            </a>
+            <div class="carousel-caption">
+                <h2>2016年最好的15个Web设计和开发工具</h2>
+                <p>网络无处不在。世界上几乎没有地方是没有被因特网所渗透的。无孔不入的网...</p>
+            </div>
+        </div>
+        <div class="item">
+            <a href="__CONTROLLER__/details?nid=201" target="_blank">
+                <img src="__ROOT__/Application/Public/Bootstrap/img/hy-lg.png">
+            </a>
+            <div class="carousel-caption">
+                <h2>2015中国程序员生存报告 你苦你先看</h2>
+                <p>上班编码，加班编码，回到家倒头就睡。别人给结婚同事包红包，他们却从来不用，因为很可能...</p>
+            </div>
+        </div>
+    </div>
+    <!--左右切换按钮-->
+    <a class="left carousel-control" href="#fullcarousel-example" data-slide="prev"><i
+            class="icon-prev fa fa-angle-left"></i></a>
+    <a class="right carousel-control" href="#fullcarousel-example" data-slide="next"><i
+            class="icon-next fa fa-angle-right"></i></a>
+</div>

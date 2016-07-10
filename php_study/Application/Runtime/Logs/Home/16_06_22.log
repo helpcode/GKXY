@@ -1,0 +1,445 @@
+[ 2016-06-22T14:04:13+08:00 ] ::1 /php_study/Index/table?do=create&id=1_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+ERR: 非法操作:table
+
+[ 2016-06-22T14:04:17+08:00 ] ::1 /php_study/Index/table?do=create&id=3_1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+ERR: 非法操作:table
+
+[ 2016-06-22T14:07:27+08:00 ] ::1 /php_study/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0410s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 1 ) ORDER BY article_articleId desc LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 2 ) ORDER BY article_articleId desc LIMIT 4   [ RunTime:0.0015s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 3 ) ORDER BY article_articleId desc LIMIT 6   [ RunTime:0.0016s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 4 ) ORDER BY article_articleId desc LIMIT 3   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000524s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002241s ]
+
+[ 2016-06-22T14:08:30+08:00 ] ::1 /php_study/Index/details?nid=36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0157s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articleId='36' ) ORDER BY article_articleId desc LIMIT 1   [ RunTime:0.0244s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 96 行.
+SQL: SELECT `article_articleId`,`article_articleTitle` FROM `pst_article_master` ORDER BY article_articleId desc LIMIT 20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001775s ]
+
+[ 2016-06-22T14:08:57+08:00 ] ::1 /php_study/Index/details?nid=215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0110s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articleId='215' ) ORDER BY article_articleId desc LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 96 行.
+SQL: SELECT `article_articleId`,`article_articleTitle` FROM `pst_article_master` ORDER BY article_articleId desc LIMIT 20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-06-22T14:09:15+08:00 ] ::1 /php_study/Index/developer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant web_learn - assumed 'web_learn' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 41 行.
+NOTIC: [8] Use of undefined constant developer - assumed 'developer' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0141s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 1 ) ORDER BY article_articleId desc LIMIT 4   [ RunTime:0.0016s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 2 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0029s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 3 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0021s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 4 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0034s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 96 行.
+SQL: SELECT `article_articleId`,`article_articleTitle` FROM `pst_article_master` ORDER BY article_articleId desc LIMIT 20   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 6 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 7 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 8 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 9 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 10 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 11 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 14 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 15 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 16 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 17 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 18 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 19 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001937s ]
+
+[ 2016-06-22T14:10:01+08:00 ] ::1 /php_study/Index/developer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001588s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant web_learn - assumed 'web_learn' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 41 行.
+NOTIC: [8] Use of undefined constant developer - assumed 'developer' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0360s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 1 ) ORDER BY article_articleId desc LIMIT 4   [ RunTime:0.0016s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 2 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0034s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 3 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0039s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 4 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0023s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 96 行.
+SQL: SELECT `article_articleId`,`article_articleTitle` FROM `pst_article_master` ORDER BY article_articleId desc LIMIT 20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000386s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 6 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 7 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 8 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 9 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 10 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 11 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 14 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 15 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 16 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 17 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 18 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 19 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.139586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.139756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002055s ]
+
+[ 2016-06-22T14:12:39+08:00 ] ::1 /php_study/Index/developer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant web_learn - assumed 'web_learn' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 41 行.
+NOTIC: [8] Use of undefined constant developer - assumed 'developer' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0125s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 1 ) ORDER BY article_articleId desc LIMIT 4   [ RunTime:0.0008s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 2 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0016s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 3 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0016s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 4 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0029s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 96 行.
+SQL: SELECT `article_articleId`,`article_articleTitle` FROM `pst_article_master` ORDER BY article_articleId desc LIMIT 20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 6 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 7 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 8 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 9 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 10 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 11 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 14 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 15 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 16 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 17 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 18 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 19 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005746s ]
+
+[ 2016-06-22T14:12:43+08:00 ] ::1 /php_study/Index/details?nid=223
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0160s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articleId='223' ) ORDER BY article_articleId desc LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 96 行.
+SQL: SELECT `article_articleId`,`article_articleTitle` FROM `pst_article_master` ORDER BY article_articleId desc LIMIT 20   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001761s ]
+
+[ 2016-06-22T14:13:15+08:00 ] ::1 /php_study/Index/details?nid=223
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0125s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articleId='223' ) ORDER BY article_articleId desc LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 96 行.
+SQL: SELECT `article_articleId`,`article_articleTitle` FROM `pst_article_master` ORDER BY article_articleId desc LIMIT 20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2016-06-22T14:13:40+08:00 ] ::1 /php_study/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0107s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 1 ) ORDER BY article_articleId desc LIMIT 4   [ RunTime:0.0009s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 2 ) ORDER BY article_articleId desc LIMIT 4   [ RunTime:0.0011s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 3 ) ORDER BY article_articleId desc LIMIT 6   [ RunTime:0.0020s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 4 ) ORDER BY article_articleId desc LIMIT 3   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000441s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000689s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001808s ]
+
+[ 2016-06-22T14:13:43+08:00 ] ::1 /php_study/Index/php_learn.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant web_learn - assumed 'web_learn' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 41 行.
+NOTIC: [8] Use of undefined constant developer - assumed 'developer' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0177s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004235s ]
+NOTIC: [8] Undefined variable: cars D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\5ae5cc96fc20545c72203277b70fbbd2.php 第 540 行.
+NOTIC: [8] Undefined variable: cars D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\5ae5cc96fc20545c72203277b70fbbd2.php 第 575 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.316778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.316883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006124s ]
+
+[ 2016-06-22T14:13:46+08:00 ] ::1 /php_study/Index/developer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant web_learn - assumed 'web_learn' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 41 行.
+NOTIC: [8] Use of undefined constant developer - assumed 'developer' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0187s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 1 ) ORDER BY article_articleId desc LIMIT 4   [ RunTime:0.0008s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 2 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0015s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 3 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0024s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 3 AND article_articleBlockId = 4 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0024s ]
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 96 行.
+SQL: SELECT `article_articleId`,`article_articleTitle` FROM `pst_article_master` ORDER BY article_articleId desc LIMIT 20   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined variable: root D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 134 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 2 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 3 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 4 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 5 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 6 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 7 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 8 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 9 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 10 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 11 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 12 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 13 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 14 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 15 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 16 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 17 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 18 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+NOTIC: [8] Undefined offset: 19 D:\phpStudy\WWW\php_study\Application\Runtime\Cache\Home\2d77d6fb92d5980ee53c5b87796cb41f.php 第 230 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001803s ]
+
+[ 2016-06-22T14:13:48+08:00 ] ::1 /php_study/Index/web_learn.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant web_learn - assumed 'web_learn' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 41 行.
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.0123s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 2 AND article_articleBlockId = 1 ) ORDER BY article_articleId desc LIMIT 12   [ RunTime:0.0012s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 2 AND article_articleBlockId = 2 ) ORDER BY article_articleId desc LIMIT 10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002332s ]
+

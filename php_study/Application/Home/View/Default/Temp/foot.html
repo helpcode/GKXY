@@ -1,0 +1,95 @@
+<!--底部版权信息-->
+<footer class="footer_background">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-sm-6 col-lg-8">
+                <h4><a href="index.html"><img src="__ROOT__/Application/Public/Bootstrap/img/php-logo3.png"/></a></h4>
+                <p>本站具有响应式的布局特点,能做到三屏(手机,平板,PC)同步,经测试具有良好的兼容性。
+                    使用过程中遇到问题或有更好的建议均可向我们反馈,意见被采纳将发放怪客社区金币作为奖励，欢迎...<br/>
+                    创想工作室(意见反馈技术交流) QQ群：<span class="label label-danger">540144097</span>
+                </p>
+            </div>
+            <div class="col-sm-6 col-lg-4 footer_right">
+                <div class="row aboutme">
+                    <div class="col-xs-4">
+                        <h4>开发人员</h4>
+                        <ul class="nav_dh">
+                            <li><a href="http://blog.sina.com.cn/danche365" title="流浪汉-单车365_新浪博客" target="_blank">刘&nbsp;&nbsp;&nbsp;&nbsp;兵</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <h4>指导老师</h4>
+                        <ul class="nav_dh">
+                            <li><a>钱政</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4">
+                        <h4>网站导航</h4>
+                        <ul class="nav_dh">
+                            <li><a href="__CONTROLLER__/index.html">网站首页</a></li>
+                            <li><a target="_blank" href="__ROOT__/Application/UPLOAD">怪客社区</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row footer-bottom">
+            <p class="footer-text">Copyright © 2016 信息与智能工程系&nbsp;&nbsp;技术支持：计用144-刘兵&nbsp;&nbsp;电话：18305520337&nbsp;&nbsp;|&nbsp;&nbsp;皖ICP备 12008101号</p>
+        </div>
+    </div>
+</footer>
+
+<!--右侧底部回到顶部-->
+<script type="text/javascript">
+    $(function() {
+        $('#fullcarousel-example').carousel({interval: 4000});
+        $( ".test" ).draggable({ opacity: 1, revert: true});
+        $("[data-toggle='tooltip']").tooltip();
+    });
+    $(function(){
+        // 页面浮动面板
+        $("#floatPanel > .ctrolPanel > a.arrow").eq(0).click(function(){$("html,body").animate({scrollTop :0}, 800);return false;});
+        $("#floatPanel > .ctrolPanel > a.arrow").eq(1).click(function(){$("html,body").animate({scrollTop : $(document).height()}, 800);return false;});
+
+        var objPopPanel = $("#floatPanel > .popPanel");
+        var w = objPopPanel.outerWidth();
+        $("#floatPanel > .ctrolPanel > a.qrcode").bind({
+            mouseover : function(){
+                objPopPanel.css("width","0px").show();
+                objPopPanel.animate({"width" : w + "px"},300);return false;
+            },
+            mouseout : function(){
+                objPopPanel.animate({"width" : "0px"},300);return false;
+                objPopPanel.css("width",w + "px");
+            }
+        });
+    });
+</script>
+<div class="hidden-xs">
+    <div id="floatPanel">
+        <div class="ctrolPanel">
+            <a class="arrow" href="#"><span>顶部</span></a>
+            <a class="contact" href="__ROOT__/Application/UPLOAD/?/topic/意见反馈" target="_blank"><span>反馈</span></a>
+            <a class="qrcode" href="#"><span>微信二维码</span></a>
+            <a class="arrow" href="#"><span>底部</span></a>
+        </div>
+        <!--二维码弹出层-->
+        <div class="popPanel">
+            <div class="popPanel-inner">
+                <div class="qrcodePanel">
+                    <img src="__ROOT__/Application/Public/Bootstrap/img/weixin.jpg" /><br/><span>QQ扫码关注我的动态！</span></div>
+                <div class="arrowPanel">
+                    <div class="arrow01">
+                    </div>
+                    <div class="arrow02">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DT ... gt%3B
+<html xml:lang="zh-cn" lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="author" content="Zhang Zhengwen">
+<title><?php if ($this->url_bit) { ?><?php _e('请稍候'); ?>...<?php } else { ?><?php _e('提示信息'); ?><?php } ?></title>
+<?php if ($this->url_bit) { ?>
+<meta http-equiv="refresh" content="<?php echo $this->interval; ?>; url=<?php echo $this->url_bit; ?>" />
+<?php } ?>
+<style type="text/css">
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+body{background:#fff;font-family:"Helvetica Neue",Helvetica,Arial,'Microsoft YaHei',sans-serif;line-height:30px;font-size:14px;color:#fff}	
+
+a{color:#ca8659;text-decoration:none}
+a:hover{color:#ca8659;text-decoration:underline}
+
+#aws_wrapper{background:#3579a6;width:500px;margin:200px auto auto auto;box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);border-radius: 3px}	
+
+.message{width:80%;padding:20px 10%}
+</style>
+
+<!--/CSS-->
+
+
+
+<?php if ($this->url_bit) { ?>
+<script type='text/javascript'>
+//<![CDATA[
+// Fix Mozilla bug: 209020
+if ( navigator.product == 'Gecko' )
+{
+navstring = navigator.userAgent.toLowerCase();
+geckonum = navstring.replace( /.*gecko\/(\d+)/, "$1" );
+
+setTimeout("moz_redirect()", 5000);
+}
+
+function moz_redirect()
+{
+var url_bit = "<?php echo $this->url_bit; ?>";
+
+window.location = url_bit.replace( new RegExp( "&amp;", "g" ) , '&' );
+}
+//>
+</script>
+<?php } ?>
+<script type="text/javascript">
+<!--
+
+var maxtime = "<?php echo $this->interval; ?>";
+function CountDown()
+{
+if(maxtime>=1)
+{
+seconds = Math.floor(maxtime%60);
+msg = seconds+"<?php _e(' 秒后跳转到：'); ?>";
+document.all["timer"].innerHTML=msg;
+--maxtime;
+}
+else
+{
+clearInterval(timer);
+document.all["timer"].innerHTML="<?php _e(' 跳转失败，请手动点击连接：'); ?>";
+}
+}
+timer = setInterval("CountDown()",1000);
+//-->
+</script>
+</head>
+<body id='aws_body' class='redirector'>
+<div id='aws_wrapper'>
+<div class='message'>
+<span id="error"><?php echo $this->message; ?></span>
+<?php if ($this->url_bit) { ?>
+<br />
+<span id="timer"><?php echo $this->interval; ?> <?php _e('秒后跳转到：'); ?></span>
+<span class='desc'><a href="<?php echo $this->url_bit; ?>"><?php echo $this->url_bit; ?></a></span>
+<?php } ?>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.php_background {
+    margin:20px auto
+}
+.panel-heading {
+    font-weight:bold;
+    text-shadow:1px 1px 1px #fff;
+    padding:18px 15px;
+    border-bottom:1px solid #eee;
+    color:#444;
+    font-size:18px
+}
+.title {
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.link-light {
+    color:#616161 !important;
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -o-transition:all .3s ease;
+    transition:all .3s ease
+}
+.group-grids .grid {
+    text-align:center;
+    border: 1px solid #E7E7E7;
+}
+.group-avatar-sm {
+    width:100px;
+    height:100px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px
+}
+.panel-title {
+    font-weight:bold;
+    font-size:18px;
+    padding-top:3px
+}
+.right_book {
+    list-style:none;
+    font-size:16px
+}
+.right_book li {
+    display:block;
+    line-height:30px
+}
+.right_book li a {
+    color:#8d8d8d
+}
+.wenzhang img{
+    width: 80%;
+}
+.wenzhang {
+    border-bottom:2px dotted #CCC
+}
+.wenzhang:hover {
+    background:#f5f5f5
+}
+.wenzhang h3 {
+    font-size:18px
+}
+.wenzhang h3 a {
+    color:#000
+}
+.wenzhang p {
+    color:#999
+}
+.wenzhang h2{
+    color: #999;
+    font-size: 14px;
+}
+.label {
+    padding:.4em .3em .3em
+}
+.label-default {
+    padding:5px
+}
+.biaoqian a {
+    color:#fff
+}
+.web_left {
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #ddd;
+    margin-left:0
+}

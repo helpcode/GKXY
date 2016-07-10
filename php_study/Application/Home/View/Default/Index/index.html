@@ -1,0 +1,221 @@
+﻿<extend name="Temp/base"/>
+<block name="content">
+    <!--推荐学习-->
+    <div class="xuexi">
+        <div class="container">
+            <div class="kfz_tuijian">
+                <h2><strong>推荐学习&nbsp;<span class="label label-danger">推荐</span></strong></h2>
+            </div>
+            <div class="row">
+                <php>
+                    for($n = 0; $n < count($data[0]); $n++){
+                        $str = strip_tags($data[0][$n]['article_articlecontent']);
+                        $str_title = $data[0][$n]['article_articletitle'];
+                        echo '
+                            <div class="col-md-3 text-center col-xs-12 border">
+                                <img class="img-circle" src="'.$root.$data[0][$n]['article_articleimg'].'" width="140" height="140" />
+                                <h4><a target="_blank" title="'.$data[0][$n]['article_articletitle'].'" href="__CONTROLLER__/details?nid='.$data[0][$n]['article_articleid'].'">'.mb_substr($str_title, 0, 10, 'utf-8').'</a></h4>
+                                <p class="clear_p">'.mb_substr($str, 0, 100, 'utf-8').'</p>
+                                <p><a target="_blank" title="'.$data[0][$n]['article_articletitle'].'" class="button button-pill" href="__CONTROLLER__/details?nid='.$data[0][$n]['article_articleid'].'">阅读</a></p>
+                            </div>
+                        ';
+                    }
+                </php>
+            </div>
+        </div>
+    </div>
+
+    <!--PHP基础 -->
+    <div class="php_xuexi">
+        <div class="row">
+            <div class="col-md-12">
+                <a><img src="__ROOT__/Application/Public/Bootstrap/img/php_background.png" class="img-responsive web_img"/></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div class="row">
+                        <php>
+                            for($n = 0; $n < count($data[1]); $n++){
+                               $str = strip_tags($data[1][$n]['article_articlecontent']);
+                               $str_title = $data[1][$n]['article_articletitle'];
+                                echo '
+                                    <div class="col-md-3">
+                                        <div class="thumbnail">
+                                            <a target="_blank" href="__CONTROLLER__/details?nid='.$data[1][$n]['article_articleid'].'"><img title="'.$data[1][$n]['article_articletitle'].'" alt="300x200" src="'.$root.$data[1][$n]['article_articleimg'].'"/></a>
+                                            <div class="caption caption_p">
+                                                <h3><a target="_blank" title="'.$data[1][$n]['article_articletitle'].'" href="__CONTROLLER__/details?nid='.$data[1][$n]['article_articleid'].'">'.mb_substr($str_title, 0, 10, 'utf-8').'</a></h3>
+                                                <p class="clear_p">'.mb_substr($str, 0, 100, 'utf-8').'</p>
+                                                <p><a href="__CONTROLLER__/details?nid='.$data[1][$n]['article_articleid'].'" class="button button-block button-rounded button-large" target="_blank">阅读</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ';
+                            }
+                        </php>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+    </div>
+
+    <!--程序员资讯 -->
+    <div class="background">
+        <div class="container">
+            <div class="kfz">
+                <h2><strong >程序猿生活</strong></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-xs-12">
+                    <php>
+                        for($n = 0; $n < 4; $n++){
+                            $str = strip_tags($data[2][$n]['article_articlecontent']);
+                            $str_title = $data[2][$n]['article_articletitle'];
+
+                            echo'
+                                <div class="row row_background">
+                                    <div class="col-md-2 col-xs-3">
+                                        <a target="_blank" href="__CONTROLLER__/details?nid='.$data[2][$n]['article_articleid'].'" title="'.$data[2][$n]['article_articletitle'].'">
+                                            <img class="img-responsive  img-circle img_xz" src="__ROOT__/Application/Public/Bootstrap/img/list1.jpg"/>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-10 col-xs-9">
+                                        <div class="media-body">
+                                            <h4 class=" media-heading"><a target="_blank" title="'.$data[2][$n]['article_articletitle'].'" href="__CONTROLLER__/details?nid='.$data[2][$n]['article_articleid'].'" class="wz_title">'.mb_substr($str_title, 0, 15, 'utf-8').'</a></h4>
+                                            <h5 class="js_title">'.mb_substr($str, 0, 180, 'utf-8').'</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            <hr/>
+                            ';
+                        }
+                    </php>
+                </div>
+                <php>
+                    for($n = 4; $n < 6; $n++){
+                        $str = strip_tags($data[2][$n]['article_articlecontent']);
+                        echo '
+                            <div class="col-md-3 hidden-xs">
+                                <div class="thumbnail thu_xxk test">
+                                    <img src="'.$root.$data[2][$n]['article_articleimg'].'" class="img-responsive"/>
+                                        <div class="caption">
+                                            <h3><a title="'.$data[2][$n]['article_articletitle'].'" href="__CONTROLLER__/details?nid='.$data[2][$n]['article_articleid'].'">'.$data[2][$n]['article_articletitle'].'</a></h3>
+                                            <p>'.mb_substr($str, 0, 100, 'utf-8').'</p>
+                                        </div>
+                                </div>
+                            </div>
+                        ';
+                    }
+                </php>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--web 大前端 -->
+    <div class="web_background ">
+        <div class="row">
+            <div class="col-md-12">
+                <a><img src="__ROOT__/Application/Public/Bootstrap/img/web_background.png" class="img-responsive web_img"/></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <php>
+                    for($n = 0; $n < count($data[3]); $n++){
+                        $str = strip_tags($data[3][$n]['article_articlecontent']);
+                        $str_title = $data[3][$n]['article_articletitle'];
+                        echo '
+                            <div class="col-md-4 col-xs-12">
+                                <div class="jumbotron jum_p">
+                                    <h4 class="text-center web_h4_one"><a title="'.$data[3][$n]['article_articletitle'].'" href="__CONTROLLER__/details?nid='.$data[3][$n]['article_articleid'].'" target="_blank">'.mb_substr($str_title, 0, 15, 'utf-8').'</a></h4>
+                                    <p class="w">'.mb_substr($str, 0, 100, 'utf-8').'</p>
+                                    <p>
+                                        <a target="_blank" href="__CONTROLLER__/details?nid='.$data[3][$n]['article_articleid'].'" class="button button-glow button-rounded button-highlight">阅读</a>
+                                    </p>
+                                </div>
+                            </div>
+                        ';
+                    }
+                </php>
+            </div>
+        </div>
+    </div>
+
+    <!--开发环境推荐 -->
+    <div class="web_ide" id="ide">
+        <div class="container">
+            <div class="kfz">
+                <h2><strong>WEB IDE 推荐 <span class="badge">个人推荐</span></strong></h2>
+
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-4 col-xs-12 wenzi-center">
+                    <img src="__ROOT__/Application/Public/Bootstrap/img/webstorm.png" alt="WebStorm">
+                    <h3 class="fea-item-title">WebStorm</h3>
+                    <P class="jieshao">
+                        WebStorm 是jetbrains公司旗下一款JavaScript 开发工具,
+                        被广大中国JS开发者誉为"Web前端开发神器",强大的代码重构，联想查询，代码提示。
+                        <br />推荐下载
+                    </P>
+                    <p><a class="button button-glow button-border button-rounded button-primary" href="http://www.jetbrains.com/webstorm/download/#section=windows-version" target="_blank">下载</a></p>
+                </div>
+                <div class="col-md-4 col-xs-12 wenzi-center">
+                    <img src="__ROOT__/Application/Public/Bootstrap/img/nb.PNG" alt="NetBeans">
+                    <h3 class="fea-item-title">NetBeans</h3>
+                    <P class="jieshao">
+                        免费好用且异常强大的PHP开发环境，支持Ruby、JavaScript、Groovy、Grails和C/C++等开发语言。提供丰富的帮助文档和
+                        第三方插件。
+                        <br/>PHP开发首选推荐....
+                    </P>
+                    <p><a class="button button-glow button-border button-rounded button-primary" href="https://netbeans.org/downloads/index.html" target="_blank">下载</a></p>
+                </div>
+                <div class="col-md-4 col-xs-12 wenzi-center">
+                    <img src="__ROOT__/Application/Public/Bootstrap/img/hbuilder.png" alt="hbuilder">
+                    <h3 class="fea-item-title">HBuilder</h3>
+                    <P class="jieshao">
+                        DCloud 开发的HTML5 IDE，支持自定义代码提示关键优势是 "快"，也就是所谓的编程效率！但部分代码提示较多余不智能
+                        也是不错的IDE，推荐做Bootstrap开发是用它，效率可以！
+                    </P>
+                    <p><a class="button button-glow button-border button-rounded button-primary" href="http://www.dcloud.io/index.html" target="_blank">下载</a></p>
+                </div>
+                <div class="col-md-4 col-xs-12 wenzi-center">
+                    <img src="__ROOT__/Application/Public/Bootstrap/img/ws.png" alt="WampServer">
+                    <h3 class="fea-item-title">WampServer</h3>
+                    <P class="jieshao">
+                        法国人开发的Apache Web服务器集成 Apache+PHP+Mysql 等环境，图形可视化操作免去将时间花在繁琐的配置过程中，
+                        从而腾出更多精力做开发。强烈推荐的PHP集成开发环境
+                    </P>
+                    <p><a class="button button-glow button-border button-rounded button-primary" href="https://sourceforge.net/projects/wampserver/?source=top3_dlp_t7" target="_blank">下载</a></p>
+                </div>
+                <div class="col-md-4 col-xs-12 wenzi-center">
+                    <img src="__ROOT__/Application/Public/Bootstrap/img/sql.PNG" alt="Navicat for MySQL">
+                    <h3 class="fea-item-title">Navicat for MySQL</h3>
+                    <P class="jieshao">
+                        极其完备友好的图形化用户界面，让你以更快捷安全简单的方式创建组织访问和共享信息。功能强大且完善受到众多程序员的喜爱，
+                        被公认为全球最受欢迎的数据库前端用户界面工具
+                    </P>
+                    <p><a class="button button-glow button-border button-rounded button-primary" href="http://www.navicat.com/download/navicat-for-mysql" target="_blank">下载</a></p>
+                </div>
+
+                <div class="col-md-4 col-xs-12 wenzi-center">
+                    <img src="__ROOT__/Application/Public/Bootstrap/img/Sublime.png" alt="Sublime Text">
+                    <h3 class="fea-item-title">Sublime Text</h3>
+                    <P class="jieshao">
+                        作为一个开发者你不可能没听说过SublimeText，SublimeText是一款非常精巧的文本编辑器，适合编写代码、做笔记、写文章。它用户界面十分整洁，
+                        功能非同凡响，性能快得出奇。
+                    </P>
+                    <p><a class="button button-glow button-border button-rounded button-primary" href="http://www.sublimetext.com/" target="_blank">下载</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</block>

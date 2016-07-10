@@ -1,0 +1,27 @@
+[ 2016-06-29T09:02:00+08:00 ] ::1 /php_study/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013004s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant article_master - assumed 'article_master' D:\phpStudy\WWW\php_study\Application\Home\Api\pageDataApi.class.php 第 83 行.
+SQL: SHOW COLUMNS FROM `pst_article_master` [ RunTime:0.3966s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 1 ) ORDER BY article_articleId desc LIMIT 4   [ RunTime:0.0048s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 2 ) ORDER BY article_articleId desc LIMIT 4   [ RunTime:0.0030s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 3 ) ORDER BY article_articleId desc LIMIT 6   [ RunTime:0.0042s ]
+SQL: SELECT `article_articleId`,`article_articleTitle`,`article_articleContent`,`article_articleTime`,`article_articleimg` FROM `pst_article_master` WHERE ( article_articlePlateId = 1 AND article_articleBlockId = 4 ) ORDER BY article_articleId desc LIMIT 3   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.613046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.613161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.051053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.051163s ]
+
